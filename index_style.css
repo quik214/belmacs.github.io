@@ -1,0 +1,433 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  /* Same as 10px */
+  overflow-x: hidden;
+}
+
+body {
+  /* Only works if there is nothing absolutely positioned in relation to body */
+  overflow-x: hidden;
+}
+
+/* NAVBAR START */
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4.8rem;
+  position: relative;
+  height: 5.5rem;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 2;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+.belmacs-logo {
+  width: 15rem;
+  height: 3.5rem;
+}
+
+.nav-list {
+  display: flex;
+
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 3.2rem;
+  row-gap: 2rem;
+  list-style: none;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  display: inline-block;
+  font-family: "Inter";
+  color: #333;
+  font-size: 1.5rem;
+
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: #364fc7;
+}
+
+.nav-link.nav-cta:link,
+.nav-link.nav-cta:visited {
+  padding: 1rem 2.2rem;
+  color: #fff;
+  background-color: #364fc7;
+}
+
+.nav-link.nav-cta:hover,
+.nav-link.nav-cta:active {
+  background-color: #364fc7;
+}
+
+/* NAVBAR END */
+
+/* MOBILE NAVBAR START */
+.nav-menu {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-icon {
+  height: 24px;
+  width: 24px;
+  color: #333;
+}
+
+.menu-icon[name="menu-close"] {
+  display: none;
+}
+
+/* VIDEO START */
+.hero {
+  /* Creating the container for video and text */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+#hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-text {
+  margin-left: 8rem;
+  z-index: 1;
+}
+
+.video-header {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+}
+
+.video-desc {
+  font-family: "Lato";
+  font-size: 5.5rem;
+}
+
+/* VIDEO END */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* GENERAL USE  START*/
+.header {
+  color: #364fc7;
+  font-family: "Lato";
+  font-size: 2rem;
+}
+
+.additional {
+  margin-top: 2.5rem;
+}
+/* GENERAL USE END */
+
+/* OUR COMPANY START */
+
+.company {
+  display: flex;
+  justify-content: center;
+  column-gap: 10rem;
+  row-gap: 5rem;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.company-text {
+  flex: 1 1 20rem;
+  font-family: "Montserrat";
+  line-height: 2.5rem;
+}
+
+.company-description {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+
+.list {
+  margin-top: 2.5rem;
+  margin-left: 2rem;
+}
+
+.company-img-container {
+  max-width: 50rem;
+}
+
+.thyehong-img {
+  max-width: 100%;
+  height: auto;
+}
+/* OUR COMPANY END */
+
+/* VISION AND MISSION START */
+.vision-mission {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.vm {
+  position: relative;
+  text-align: center;
+  color: white;
+  flex: 1 1 50%;
+  max-width: 50rem;
+  background-color: rgba(0, 0, 0, 1);
+
+  z-index: 2;
+}
+
+.vm-img {
+  max-width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.vm-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* VISION AND MISSION END */
+
+/* OUR PEOPLE START */
+.our-people {
+  margin-top: 4rem;
+}
+
+.people {
+  display: flex;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.director-img {
+  height: 240px;
+  width: 180px;
+  margin-top: 3rem;
+}
+
+/* @media (max-width: 590px) {
+  .director-name[name="chin"] {
+    display: none;
+  }
+} */
+
+.director-name {
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.director-info {
+  font-family: "Lato";
+  font-size: 1.4rem;
+  width: 170px;
+  margin-top: 0.5rem;
+}
+
+.skills {
+  color: #495057;
+}
+
+/* OUR PEOPLE END */
+
+/* IMS POLICY START */
+.ims-policy {
+  margin-top: 4rem;
+}
+
+.ims {
+  display: flex;
+  column-gap: 10rem;
+  row-gap: 5rem;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.ims-text {
+  flex: 1 1 20rem;
+}
+
+.ims-description {
+  font-family: "Montserrat";
+  line-height: 2.5rem;
+  font-size: 1.6rem;
+}
+
+.ims-cert {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8rem;
+  justify-content: center;
+}
+
+.cert-container {
+  height: 105px;
+}
+
+.cert {
+  height: 100%;
+  width: auto;
+}
+
+/* IMS POLICY END */
+
+/* WORKPLACE SAFETY START*/
+.workplace-safety {
+  margin-top: 6rem;
+}
+
+/* WORKPLACE SAFETY - PROMISE START */
+.workplace-promise {
+  display: flex;
+  margin-top: 3rem;
+  width: 100%;
+  height: auto;
+  background-color: #0a0c0b;
+  align-items: center;
+  column-gap: 2rem;
+  row-gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.promise-image-container {
+  max-width: 500px;
+  padding: 20px 20px;
+}
+
+.promise-image {
+  max-width: 100%;
+  height: auto;
+  flex: 1;
+}
+
+.promise-text {
+  font-family: "Montserrat";
+  line-height: 2.5rem;
+  font-size: 1.4rem;
+  color: #ffffff;
+  flex: 1 1 5px;
+  padding: 20px 40px;
+}
+
+.promise-text-bottom {
+  margin-top: 2rem;
+}
+
+.bizsafe {
+  width: 100px;
+  height: 40px;
+  float: right;
+}
+/* WORKPLACE SAFETY - PROMISE END */
+
+/* WORKPLACE SAFETY - THREE METHODS START */
+.three-methods {
+  display: flex;
+  margin-top: 2.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.safety-icon {
+  height: 36px;
+  width: 36px;
+  color: green;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.method {
+  flex: 1 1 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 30px 40px;
+}
+
+.method-header {
+  font-family: "Lato";
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.method-text {
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+  text-align: center;
+}
+/* WORKPLACE SAFETY - THREE METHODS END */
+/* WORKPLACE SAFETY END */
+
+/* PDPA START */
+.pdpa {
+  margin-top: 6rem;
+}
+
+.pdpa-text {
+  font-family: "Montserrat";
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+.pdpa-desc {
+  margin-top: 1.2rem;
+}
+/* PDPA END */
+
+/* FOOTER START */
+footer {
+  font-family: "Arial";
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+/* FOOTER END */
