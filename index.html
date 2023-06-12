@@ -1,2 +1,284 @@
-# quik214.github.io
-Project Website
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="index_style.css" rel="stylesheet" />
+    <link href="queries.css" rel="stylesheet" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="others/tab-logo.png" />
+
+    <script src="script.js" defer></script>
+
+    <title>Belmacs Consulting Engineers</title>
+  </head>
+  <body>
+    <header class="top sticky">
+      <img src="others/belmacs-logo.jpg" class="belmacs-logo" />
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#">About Us</a></li>
+          <li><a class="nav-link" href="#">Projects</a></li>
+          <li><a class="nav-link" href="#">Services</a></li>
+          <li><a class="nav-link nav-cta" href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-menu">
+        <img class="menu-icon" name="menu-open" src="icons/hamburger.svg" />
+        <img class="menu-icon" name="menu-close" src="icons/close.svg" />
+      </button>
+    </header>
+
+    <div class="hero">
+      <video autoplay muted loop id="hero-video">
+        <source src="others/SGCityscape.mp4" type="video/mp4" />
+      </video>
+
+      <div class="video-text">
+        <p class="video-header">Belmacs Consulting Engineers</p>
+        <p class="video-desc">Make a Difference</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <section class="company">
+        <div class="company-text">
+          <p class="header">The Company</p>
+
+          <p class="company-description">
+            BELMACS Consulting Engineers was established in 1994, providing
+            mechanical & electrical consulting engineering services. BELMACS
+            provides a complete range of professional consultancy services for a
+            wide variety of projects including offices, commercial, industrial,
+            residential, hotels, institutional and additions & alterations of
+            existing buildings.
+          </p>
+
+          <p class="company-description additional">
+            We have a team of pro-active, dedicated and passionate engineers and
+            designers who are able to provide solutions and add value to our
+            projects and customers, in one way or another.
+          </p>
+        </div>
+        <div class="company-img-container">
+          <img src="buildings/thyehong.jpg" class="thyehong-img" />
+        </div>
+      </section>
+
+      <!-- <section class="vision-mission">
+        <div class="vm">
+          <img class="vm-img" src="others/vision.jpg" />
+          <div class="vm-text">
+            <p class="vm-header">Our Vision</p>
+            <p class="vm-desc">
+              To be one of the leading M&E consulting engineers in Singapore
+            </p>
+          </div>
+        </div>
+
+        <div class="vm">
+          <img class="vm-img" src="others/mission.jpg" />
+          <div class="vm-text">
+            <p class="vm-header">Our Mission</p>
+            <p class="vm-desc">To provide professional, value-added designs</p>
+          </div>
+        </div>
+      </section> -->
+
+      <section class="our-people">
+        <p class="header">Our People</p>
+        <div class="people">
+          <div class="dir-one">
+            <img class="director-img" src="directors/chinyeutong.jpg" />
+            <p class="director-name" name="chin">Er. Chin Yeu Tong</p>
+            <p class="director-info">Managing Director</p>
+            <p class="director-info skills">
+              B.Eng (Mech), P.Eng, Certified GMFP
+            </p>
+          </div>
+
+          <div class="dir-two">
+            <img class="director-img" src="directors/tanyankiat.jpg" />
+            <p class="director-name">Er. Tan Yan Kiat</p>
+            <p class="director-info">Founder & Director</p>
+            <p class="director-info skills">
+              B.Eng (Mech), P.Eng, Sr. MIES, MASHRAE, Registered Inspector (M&E)
+            </p>
+          </div>
+
+          <div class="dir-three">
+            <img class="director-img" src="directors/bennywong.jpg" />
+            <p class="director-name">Er. Wong Yit Hong, Benny</p>
+            <p class="director-info">Director</p>
+            <p class="director-info skills">
+              B.Eng (Mech), P.Eng, MIES, MASHRAE, DfSC
+            </p>
+          </div>
+
+          <div class="dir-four">
+            <img class="director-img" src="directors/chauyongfoo.jpg" />
+            <p class="director-name">Er. Chau Yong Foo</p>
+            <p class="director-info">Director</p>
+            <p class="director-info skills">
+              B.Eng (Elect), P.Eng, SCEM, ACPE, DFSP
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="ims-policy">
+        <p class="header">Our IMS Policy</p>
+        <div class="ims">
+          <div class="ims-text">
+            <p class="ims-description">
+              The Management and Staff of BELMACS Pte Ltd are fully committed to
+              providing professional, value-added designs that meet
+              international quality and environmental management system
+              standards for M&E services to achieve Total Customer Satisfaction
+              and green environment.
+            </p>
+            <p class="ims-description additional">
+              We shall strive to improve ourselves and the effectiveness of our
+              Integrated Management System continually to uphold this IMS policy
+              in our respective areas of work to meet the requirements of our
+              Clients, the regulatory authorities and the built environment. We
+              are committed to prevention of environmental pollution and
+              compliance to all applicable environmental legislations and
+              requirements to which we subscribe.
+            </p>
+          </div>
+
+          <div class="ims-cert">
+            <div class="cert-container">
+              <img src="certs/cert1.png" class="cert" />
+            </div>
+            <div class="cert-container">
+              <img src="certs/cert2.png" class="cert" />
+            </div>
+            <div class="cert-container">
+              <img src="certs/cert3.png" class="cert" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="workplace-safety">
+        <p class="header">Our Workplace Safety and Health Policy</p>
+
+        <div class="three-methods">
+          <div class="method">
+            <img src="icons/note-pencil-blue.svg" class="safety-icon" />
+            <p class="method-header">Compliance</p>
+            <p class="method-text">Compliance with applicable legislation</p>
+          </div>
+          <div class="method">
+            <img src="icons/hand-palm-blue.svg" class="safety-icon" />
+            <p class="method-header">Prevention</p>
+            <p class="method-text">
+              Adopting the best practices and continuously improving health and
+              safety standards to prevent injury and ill health
+            </p>
+          </div>
+          <div class="method">
+            <img src="icons/chalkboard-teacher-blue.svg" class="safety-icon" />
+            <p class="method-header">Education</p>
+            <p class="method-text">
+              Educating and training our employees on the importance of safety
+              and health
+            </p>
+          </div>
+        </div>
+
+        <div class="workplace-promise">
+          <div class="promise-image-container">
+            <img class="promise-image" src="others/construction-worker.jpg" />
+          </div>
+          <div class="promise-text">
+            <p class="promise-text-top">
+              We aim to promote a proactive WSH policy based on effective
+              communication, systematic identification, assessment and control
+              of hazards/procedures.
+            </p>
+
+            <p class="promise-text-bottom">
+              We are committed and will develop security programmes to include
+              terrorism protection. We will also work together with our clients,
+              fellow consultants, contractors and suppliers to embrace the
+              SGSecure movement.
+            </p>
+
+            <img class="bizsafe" src="others/bizsafe.png" />
+          </div>
+        </div>
+      </section>
+
+      <section class="pdpa">
+        <p class="header">Our Personal Data Protection Policy</p>
+        <div class="pdpa-text">
+          <p class="pdpa-desc">
+            We are committed to protecting your personal data by strictly
+            complying with the Personal Data Protection Act (PDPA) when handling
+            any personal data submitted by you. Our Data Protection Officers
+            have been designated to collect, use, disclose or otherwise process
+            your personal data professionally.
+          </p>
+          <p class="pdpa-desc">
+            This Policy applies to all relevant parties such as (but not limited
+            to) employees, clients and contractors that are involved with us and
+            are required to provide personal data for business or legal
+            purposes.
+          </p>
+
+          <p class="pdpa-desc">
+            By submitting your personal data to us, it is noted that you have
+            agreed to the collection, use, processing and disclosure of the
+            personal data such as (but not limited to) contact numbers, emails,
+            personal particulars, family member particulars and resume details
+            in accordance with the PDPA.
+          </p>
+          <p class="pdpa-desc">
+            We will cease to retain any document containing the personal data
+            when the information collected no longer serves its purpose and
+            necessary for business or legal use. We may retain any personal data
+            for as long as it is necessary to fulfil the purposes for which they
+            were collected, or as required or permitted by applicable laws.
+          </p>
+          <p class="pdpa-desc">
+            In order to ensure that your personal data remains current, complete
+            and accurate, we strongly encourage you to contact us soonest
+            possible on any updates of your personal data we have about you.
+          </p>
+          <p class="pdpa-desc">
+            For further enquiries, please
+            <a href="mailto: dpo@belmacs.com.sg">send an email</a> to our Data
+            Protection Officer.
+          </p>
+        </div>
+      </section>
+
+      <footer>
+        <p>Copyright © 2023 BELMACS | All rights reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>
