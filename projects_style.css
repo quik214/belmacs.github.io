@@ -156,14 +156,99 @@ body {
   cursor: pointer;
 }
 
-.project-img {
-  height: 10rem;
-  width: 20rem;
-}
-
-#flamingo {
-  display: none;
-  animation: fadeIn 5s;
-}
-
 /* PROJECTS NAV END */
+
+/* SHOW AND HIDE START*/
+.category {
+  display: none;
+}
+
+.display {
+  display: block;
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* SHOW AND HIDE END */
+
+/* CONTAINER START */
+.container {
+  width: 80%;
+  margin: 2rem auto;
+}
+/* CONTAINER END */
+
+/* STYLING CARD START */
+.card-container {
+  display: flex;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  /* Card resizes when gap size changes  */
+  flex-wrap: wrap;
+}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  flex-basis: calc(33.33% - 2rem);
+  transition: 0.2s all ease-in-out; /* Animation */
+}
+
+/* On mouse-over, add a deeper shadow */
+/* .card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+} */
+
+.card-img {
+  height: 20rem;
+  width: 100%;
+  /* Take up full width of its card container */
+  object-fit: cover;
+}
+
+.card:hover {
+  transform: scale(
+    1.02
+  ); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Add some padding inside the card container */
+.card-text-container {
+  padding: 1.4rem 1.6rem;
+}
+
+.card-header {
+  font-size: 1.4rem;
+  font-family: "Montserrat";
+  margin-bottom: 1.8rem;
+  font-weight: 600;
+}
+
+.card-desc-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.card-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 1rem;
+}
+
+.card-desc {
+  font-size: 1.2rem;
+  font-family: "Inter";
+}
+
+/* STYLING CARD END */

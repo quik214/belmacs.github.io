@@ -29,14 +29,8 @@ btnOpenNavEl.addEventListener("click", function () {
 });
 
 // Toggle between project types
-const residentialToggle = document.getElementById("residential");
-const commercialToggle = document.getElementById("commercial");
-const retrofitToggle = document.getElementById("retrofit");
-const institutionalToggle = document.getElementById("institutional");
-const infrastructureToggle = document.getElementById("infrastructure");
-const industrialToggle = document.getElementById("industrial");
-const fittingToggle = document.getElementById("fitting");
 
+// Below code to toggle bottom border on/off
 // Place all toggles inside toggles as an array
 let toggles = Array.from(document.querySelectorAll(".project-btn"));
 
@@ -56,6 +50,91 @@ const handleClick = (e) => {
 toggles.forEach((node) => {
   node.addEventListener("click", handleClick);
 });
+
+const residentialToggle = document.getElementById("residential-btn");
+const commercialToggle = document.getElementById("commercial-btn");
+const retrofitToggle = document.getElementById("retrofit-btn");
+const institutionalToggle = document.getElementById("institutional-btn");
+const infrastructureToggle = document.getElementById("infrastructure-btn");
+const industrialToggle = document.getElementById("industrial-btn");
+const fittingToggle = document.getElementById("fitting-btn");
+
+// Class that all categories have
+let category = Array.from(document.querySelectorAll(".category"));
+
+let commercial = document.getElementById("commercial");
+let residential = document.getElementById("residential");
+let retrofit = document.getElementById("retrofit");
+let institutional = document.getElementById("institutional");
+let infrastructure = document.getElementById("infrastructure");
+let industrial = document.getElementById("industrial");
+let fitting = document.getElementById("fitting");
+
+// Onclick residential
+residentialToggle.onclick = function () {
+  category.forEach((node) => {
+    node.classList.remove("display");
+  });
+  residential.classList.add("display");
+  return false;
+};
+
+// Onclick commercial
+commercialToggle.onclick = function () {
+  category.forEach((node) => {
+    node.classList.remove("display");
+  });
+  commercial.classList.add("display");
+  return false;
+};
+
+// Onclick retrofit
+retrofitToggle.onclick = function () {
+  category.forEach((node) => {
+    node.classList.remove("display");
+  });
+  retrofit.classList.add("display");
+};
+
+// Onclick institutional
+institutionalToggle.onclick = function () {
+  category.forEach((node) => {
+    node.classList.remove("display");
+  });
+  institutional.classList.add("display");
+};
+
+// Onclick infrastructure
+infrastructureToggle.onclick = function () {
+  category.forEach((node) => {
+    node.classList.remove("display");
+  });
+  infrastructure.classList.add("display");
+};
+
+// Onclick industrial
+industrialToggle.onclick = function () {
+  category.forEach((node) => {
+    node.classList.remove("display");
+  });
+  industrial.classList.add("display");
+};
+
+// Onclick fitting
+fittingToggle.onclick = function () {
+  category.forEach((node) => {
+    node.classList.remove("display");
+  });
+  fitting.classList.add("display");
+};
+
+// const handleToggle = (e) => {
+//   e.preventDefault();
+//   categoryCards.forEach((node) => {
+//     node.classList.remove("display");
+//   });
+//   e.current;
+// };
 
 // commercialToggle.onclick = function () {
 //   if (tapestryImg.style.display !== "none") {
