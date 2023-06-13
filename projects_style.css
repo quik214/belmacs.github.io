@@ -129,10 +129,31 @@ body {
 .project-nav {
   display: flex;
   justify-content: center;
-  column-gap: 1rem;
+  align-items: stretch;
+  column-gap: 5rem;
+  border-bottom: 1px solid black;
+  flex-wrap: wrap;
 }
 
-.project-button {
+.project-btn {
+  border: none;
+  background-color: transparent;
+  font-family: "Lato";
+  font-weight: 600;
+  height: 5rem;
+  box-sizing: border-box;
+  border-bottom: 2px solid transparent;
+  border-top: 2px solid transparent;
+}
+
+.active {
+  border-bottom: 2px solid #364fc7;
+}
+
+.project-btn:hover,
+.project-btn:active {
+  color: #364fc7;
+  cursor: pointer;
 }
 
 .project-img {
@@ -142,6 +163,7 @@ body {
 
 #flamingo {
   display: none;
+  animation: fadeIn 5s;
 }
 
 /* PROJECTS NAV END */
