@@ -28,19 +28,30 @@ btnOpenNavEl.addEventListener("click", function () {
   topEl.classList.toggle("nav-open");
 });
 
-// // Smooth scrolling
+// Toggle between project types
+const residentialToggle = document.getElementById("residential");
+const commercialToggle = document.getElementById("commercial");
+const tapestryImg = document.getElementById("tapestry");
+const flamingoImg = document.getElementById("flamingo");
 
-// const allLinks = document.querySelectorAll("a:link");
+// commercialToggle.onclick = function () {
+//   if (tapestryImg.style.display !== "none") {
+//     tapestryImg.style.display = "none";
+//   } else {
+//     tapestryImg.style.display = "block";
+//   }
+// };
 
-// allLinks.forEach(function (link) {
-//   link.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     const href = link.getAttribute("href");
-//     console.log(href);
+residentialToggle.onclick = function () {
+  tapestryImg.style.display = "block";
+  flamingoImg.style.display = "none";
+};
 
-//     // Close mobile navigation on scroll
-//     if (link.classList.contains("nav-link")) {
-//       topEl.classList.toggle("nav-open");
-//     }
-//   });
-// });
+commercialToggle.onclick = function () {
+  tapestryImg.style.display = "none";
+  flamingoImg.style.display = "block";
+
+  // if (flamingoImg.style.display == "none") {
+  //   flamingoImg.style.display = "block";
+  // }
+};

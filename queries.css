@@ -65,6 +65,12 @@
     font-size: 1.2rem;
   }
   /* WORKPLACE SAFETY END */
+
+  /* PDPA START */
+  .pdpa-text {
+    font-size: 1.4rem;
+  }
+  /* PDPA END */
 }
 
 /* BELOW 1200px (Landscape tablets) */
@@ -202,6 +208,12 @@
   }
 
   /* WORKPLACE SAFETY END */
+
+  /* PDPA START */
+  .pdpa-text {
+    font-size: 1.4rem;
+  }
+  /* PDPA END */
 
   /* MOBILE NAV START */
   .top {
@@ -374,6 +386,12 @@
   }
 
   /* WORKPLACE SAFETY END */
+
+  /* PDPA START */
+  .pdpa-text {
+    font-size: 1.2rem;
+  }
+  /* PDPA END */
 
   /* MOBILE NAV START */
   .top {
@@ -551,4 +569,10 @@
     font-size: 1rem;
   }
   /* WORKPLACE SAFETY END */
+
+  /* PDPA START */
+  .pdpa-text {
+    font-size: 1rem;
+  }
+  /* PDPA END */
 }

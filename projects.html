@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="projects_style.css" rel="stylesheet" />
+    <!-- Below for mobile navbar -->
+    <link href="queries.css" rel="stylesheet" />
+    <!-- Below for this file -->
+    <link href="projects_queries.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Inter"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="others/tab-logo.png" />
+
+    <!-- Below also for mobile navbar -->
+    <script src="script.js" defer></script>
+    <title>Belmacs Consulting Engineers</title>
+  </head>
+  <body>
+    <header class="top sticky">
+      <img src="others/belmacs-logo.jpg" class="belmacs-logo" />
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#">About Us</a></li>
+          <li><a class="nav-link" href="#">Projects</a></li>
+          <li><a class="nav-link" href="#">Services</a></li>
+          <li><a class="nav-link nav-cta" href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-menu">
+        <img class="menu-icon" name="menu-open" src="icons/hamburger.svg" />
+        <img class="menu-icon" name="menu-close" src="icons/close.svg" />
+      </button>
+    </header>
+
+    <div class="hero-container">
+      <div class="hero-image">
+        <div class="hero-text">
+          <p>Our Projects</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-nav">
+      <button id="residential" class="project-button">Residential</button>
+      <button id="commercial" class="project-button">Commercial</button>
+      <button id="retrofit" class="project-button">
+        Existing Building Retrofit
+      </button>
+      <button id="institutional" class="project-button">Institutional</button>
+      <button id="infrastructure" class="project-button">Infrastructure</button>
+      <button id="industrial" class="project-button">Industrial</button>
+      <button id="fitting" class="project-button">Fitting Out/A&A</button>
+    </div>
+
+    <img id="tapestry" class="project-img" src="buildings/tapestry.png" />
+    <img id="flamingo" class="project-img" src="buildings/flamingo.png" />
+  </body>
+</html>
