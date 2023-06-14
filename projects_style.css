@@ -133,6 +133,8 @@ body {
   column-gap: 5rem;
   border-bottom: 1px solid black;
   flex-wrap: wrap;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .project-btn {
