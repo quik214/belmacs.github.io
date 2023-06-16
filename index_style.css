@@ -42,7 +42,6 @@ body {
 
 .nav-list {
   display: flex;
-
   align-items: center;
   flex-wrap: wrap;
   column-gap: 3.2rem;
@@ -98,6 +97,7 @@ body {
 .menu-icon[name="menu-close"] {
   display: none;
 }
+/* MOBILE NAVBAR END */
 
 /* VIDEO START */
 .hero {
@@ -233,7 +233,6 @@ body {
 
 .people {
   display: flex;
-  grid-template-columns: repeat(4, 1fr);
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -319,6 +318,51 @@ body {
   margin-top: 6rem;
 }
 
+/* WORKPLACE SAFETY - THREE METHODS START */
+.three-methods {
+  display: flex;
+  margin-top: 2.8rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 50px;
+  row-gap: 20px;
+}
+
+.safety-icon {
+  height: 36px;
+  width: 36px;
+  color: green;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.method {
+  flex: 1 1 50px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 30px 40px;
+  transition: 0.2s all ease-in-out; /* Animation */
+}
+
+.method:hover {
+  transform: scale(1.02);
+}
+
+.method-header {
+  font-family: "Lato";
+  font-size: 1.6rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.method-text {
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  margin-top: 0.6rem;
+  text-align: center;
+}
+/* WORKPLACE SAFETY - THREE METHODS END */
+
 /* WORKPLACE SAFETY - PROMISE START */
 .workplace-promise {
   display: flex;
@@ -364,45 +408,6 @@ body {
 }
 /* WORKPLACE SAFETY - PROMISE END */
 
-/* WORKPLACE SAFETY - THREE METHODS START */
-.three-methods {
-  display: flex;
-  margin-top: 2.8rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  column-gap: 50px;
-  row-gap: 20px;
-}
-
-.safety-icon {
-  height: 36px;
-  width: 36px;
-  color: green;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-}
-
-.method {
-  flex: 1 1 50px;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  padding: 30px 40px;
-}
-
-.method-header {
-  font-family: "Lato";
-  font-size: 1.6rem;
-  margin-top: 1rem;
-  text-align: center;
-}
-
-.method-text {
-  font-family: "Montserrat";
-  font-size: 1.4rem;
-  margin-top: 0.6rem;
-  text-align: center;
-}
-/* WORKPLACE SAFETY - THREE METHODS END */
 /* WORKPLACE SAFETY END */
 
 /* PDPA START */

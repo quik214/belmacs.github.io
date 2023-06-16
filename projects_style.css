@@ -119,7 +119,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: "Lato";
 }
 
@@ -254,3 +254,13 @@ body {
 }
 
 /* STYLING CARD END */
+
+/* FOOTER START */
+footer {
+  font-family: "Arial";
+  text-align: center;
+  margin-top: 4.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+/* FOOTER END */

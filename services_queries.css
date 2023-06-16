@@ -1,0 +1,19 @@
+@media (max-width: 850px) {
+  .service-box {
+    flex: 1 1 calc(50% - 2rem);
+  }
+
+  .full {
+    flex-basis: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .service-box {
+    flex: 1 1 100%;
+  }
+
+  .header {
+    font-size: 1.2rem;
+  }
+}
