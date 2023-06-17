@@ -5,10 +5,10 @@
 
   .address {
     font-size: 3.4rem;
+    margin-bottom: 3.4rem;
   }
 
   .details-text {
-    font-family: "Montserrat";
     font-size: 2rem;
   }
 
@@ -33,7 +33,6 @@
   }
 
   .details-text {
-    font-family: "Montserrat";
     font-size: 1.2rem;
   }
 
@@ -64,7 +63,6 @@
   }
 
   .details-text {
-    font-family: "Montserrat";
     font-size: 1rem;
   }
 
@@ -79,7 +77,6 @@
   }
 
   .map {
-    width: 100%;
     height: 20rem;
   }
 }
@@ -95,7 +92,6 @@
   }
 
   .details-text {
-    font-family: "Montserrat";
     font-size: 0.8rem;
   }
 
@@ -110,7 +106,6 @@
   }
 
   .map {
-    width: 100%;
     height: 18rem;
   }
 }
@@ -125,25 +120,17 @@
     margin-bottom: 2rem;
   }
 
-  .details-text {
-    font-family: "Montserrat";
-    font-size: 0.6rem;
+  .details-container {
+    margin-bottom: 0.6rem;
   }
-
-  .details-icon {
-    width: 0.8rem;
-    height: 0.8rem;
-    margin-right: 0.6rem;
-  }
+  /* CONTAINER MARGIN FOLLOWS 650px SIZE */
+  /* FONT SIZE FOLLOWS 650px SIZE */
 
   .company-img-container {
     max-width: 22rem;
   }
 
-  .map {
-    width: 100%;
-    height: 12rem;
-  }
+  /* MAP SIZE FOLLOWS 650px SIZE */
 }
 
 @media (max-width: 470px) {
@@ -157,29 +144,13 @@
     margin-bottom: 1.5rem;
   }
 
-  .details-container {
-    margin-bottom: 0.6rem;
-  }
-
-  .details-text {
-    font-family: "Montserrat";
-    font-size: 0.6rem;
-  }
-
-  .details-icon {
-    width: 0.8rem;
-    height: 0.8rem;
-    margin-right: 0.6rem;
-  }
-
   .company-img-container {
-    max-width: 17rem;
+    max-width: 18rem;
   }
+  /* CONTAINER MARGIN FOLLOWS 650px SIZE */
+  /* FONT SIZE FOLLOWS 650px SIZE */
 
-  .map {
-    width: 100%;
-    height: 12rem;
-  }
+  /* MAP SIZE FOLLOWS 650px SIZE */
 }
 
 @media (max-width: 380px) {
@@ -190,7 +161,7 @@
 
   .address {
     font-size: 0.8rem;
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.2rem;
   }
 
   .details-container {
@@ -199,7 +170,7 @@
 
   .details-text {
     font-family: "Montserrat";
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   .details-icon {
@@ -214,19 +185,19 @@
 
   .map {
     width: 100%;
-    height: 12rem;
+    height: 16rem;
   }
 }
 
 @media (max-width: 325px) {
   .header {
-    font-size: 0.4rem;
+    font-size: 0.6rem;
     margin-bottom: 1rem;
   }
 
   .address {
-    font-size: 0.6rem;
-    margin-bottom: 1.4rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
   }
 
   .details-container {
@@ -235,12 +206,12 @@
 
   .details-text {
     font-family: "Montserrat";
-    font-size: 0.4rem;
+    font-size: 0.6rem;
   }
 
   .details-icon {
-    width: 0.6rem;
-    height: 0.6rem;
+    width: 0.8rem;
+    height: 0.8rem;
     margin-right: 0.4rem;
   }
 
@@ -250,6 +221,6 @@
 
   .map {
     width: 100%;
-    height: 10rem;
+    height: 14rem;
   }
 }
